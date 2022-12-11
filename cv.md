@@ -16,6 +16,13 @@ My name is Artak, I am 23 years old. At the moment I work in a web studio, devel
 * **JavaScript**
 * **Git**
 
+## Code example
+```
+function sum(a, b) {
+  return a + b
+}
+```
+
 ## Education 
 **Institute:** Russian State Vocational Pedagogical University  
 **Speciality:** Information Technology  
