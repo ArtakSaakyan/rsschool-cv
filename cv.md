@@ -27,8 +27,3 @@ function sum(a, b) {
 **Institute:** Russian State Vocational Pedagogical University  
 **Speciality:** Information Technology  
 **Years of education:** 2017 - 2022  
-
-## Language
-**Armenian:** native language  
-**Russian:** primary language  
-**English:** A1 (Beginner)  
