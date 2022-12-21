@@ -1,0 +1,145 @@
+@import 'variables';
+@import 'typography';
+
+.container {
+  margin: 0 24px;
+}
+
+.subtitle {
+  text-align: center;
+  background: $yellow;
+  border-radius: 10px;
+  width: max-content;
+  padding: 6px;
+  margin: 0 auto 24px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: $social;
+  transition: $td;
+
+  &:hover {
+    color: $red
+  }
+}
+
+.list {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &.no-type {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+// Header
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+.header-fixed {
+  width: 100%;
+  height: 64px;
+}
+
+// Main
+.main {
+  width: 100%;
+  padding: 24px 0;
+  
+  @media (min-width: $lg) {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.nav {
+  width: 100%;
+  max-width: $lg;
+  margin: 0 auto;
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 16px 0;
+  }
+  
+  li {
+
+  }
+
+  a {
+    font-weight: 500;
+    text-decoration: none;
+    color: $black;
+    transition: $td;
+
+    &:hover {
+      color: $red
+    }
+  }
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-block {
+  margin-bottom: 24px;
+}
+
+.photo {
+  img {
+    border: 1px solid $gray;
+    box-shadow: 0 0 0 1px rgba(27,31,36,0.15);
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+  }
+}
+
+// Footer
+.footer {
+  background-color: $white;
+  padding: 16px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: $lg;
+  margin: 0 auto;
+
+  @media (min-width: $md) {
+    flex-direction: row;
+  }
+}
+
+.github, .rsschool {
+  width: max-content;
+  height: 40px;
+  
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
