@@ -4,52 +4,111 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
-  <link rel="stylesheet" href="style.css">
+  <title>RS School CV</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <script src="main.js" defer></script>
 </head>
 <body>
-  <h1>Artak Saakyan</h1>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code-example">Code example</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="header-fixed"></div>
 
-  <h2>Contacts</h2>
-  <ul>
-    <li><b>Location:</b> Russia, Ekaterinburg</li>
-    <li><b>E-mail:</b> artak.saakyan.99@mail.ru</li>
-    <li><b>Telegram:</b> @mighty_artsakh</li>
-    <li><b>GitHub:</b> ArtakSaakyan</li>
-    <li><b>Discord:</b> Artak#9956</li>
-  </ul>
-
-  <h2>About me</h2>
-  <p>My name is Artak, I am 23 years old. At the moment I work in a web studio, develop websites and I like it. I want to
-  upgrade my skills in this area and therefore at work I was offered to take a course from RS School.</p>
-
-  <h2>Skills</h2>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Git</li>
-  </ul>
-
-  <h2>Code example</h2>
-  <pre><code>function sum(a, b) {
+  <main class="main">
+    <div class="container">
+      <div class="profile">
+        <div class="photo">
+          <img src="img/GitHub-Photo.png" alt="Фото">
+        </div>
+        <h1>Artak Saakyan</h1>
+        <h2>Junior Frontend Developer</h2>
+      </div>
+  
+      <div id="contacts" class="profile-block">
+        <h2 class="subtitle">Contacts</h2>
+        <ul class="list">
+          <li><b>Location:</b> Russia, Ekaterinburg</li>
+          <li><b>E-mail:</b> <a class="social-link" href="mailto:artak.saakyan.99@mail.ru">artak.saakyan.99@mail.ru</a></li>
+          <li><b>Telegram:</b> <a class="social-link" href="https://t.me/mighty_artsakh" target="_blank">@mighty_artsakh</a></li>
+          <li><b>Discord:</b> <a class="social-link" href="https://discordapp.com/users/330595991277404161" target="_blank">Artak#9956</a></li>
+        </ul>
+      </div>
+  
+      <div id="about" class="profile-block">
+        <h2 class="subtitle">About me</h2>
+        <p>My name is Artak, I am 23 years old. At the moment I work in a web studio, develop websites and I like it. I want to
+        upgrade my skills in this area and therefore at work I was offered to take a course from RS School.</p>
+      </div>
+  
+      <div id="skills" class="profile-block">
+        <h2 class="subtitle">Skills</h2>
+        <ul class="list">
+          <li><b>HTML</b></li>
+          <li><b>CSS</b></li>
+          <li><b>JavaScript</b></li>
+          <li><b>Git</b></li>
+        </ul>
+      </div>
+  
+      <div id="code-example" class="profile-block">
+        <h2 class="subtitle">Code example</h2>
+        <pre><code>function sum(a, b) {
   return a + b
-}
-  </code></pre>
+}</code></pre>
+      </div>
 
-  <h2>Education</h2>
-  <p>
-    <b>Institute:</b> Russian State Vocational Pedagogical University<br>
-    <b>Speciality:</b> Information Technology<br>
-    <b>Years of education:</b> 2017 - 2022
-  </p>
+      <div id="portfolio" class="profile-block">
+        <h2 class="subtitle">Portfolio</h2>
+        <p><a class="social-link" href="http://artaksaakyan.github.io/" target="_blank">Link</a> to my portfolio</p>
+      </div>
+  
+      <div id="education" class="profile-block">
+        <h2 class="subtitle">Education</h2>
+        <ul class="list no-type">
+          <li><b>Institute:</b> Russian State Vocational Pedagogical University<br></li>
+          <li><b>Speciality:</b> Information Technology<br></li>
+          <li><b>Years of education:</b> 2017 - 2022</li>
+        </ul>
+      </div>
+  
+      <div id="languages" class="profile-block">
+        <h2 class="subtitle">Language</h2>
+        <ul class="list no-type">
+          <li><b>Armenian:</b> native language<br></li>
+          <li><b>Russian:</b> primary language<br></li>
+          <li><b>English:</b> A1 (Beginner)</li>
+        </ul>
+      </div>
+    </div>
+  </main>
 
-  <h2>Language</h2>
-  <p>
-    <b>Armenian:</b> native language<br>
-    <b>Russian:</b> primary language<br>
-    <b>English:</b> A1 (Beginner)
-  </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="https://github.com/ArtakSaakyan" class="github" target="_blank">
+          <img src="img/GitHub.png" alt="GitHub">
+        </a>
+        <p>© 2022 by Artak Saakyan</p>
+        <a href="https://rs.school/js/" class="rsschool" target="_blank">
+          <img src="img/RS-School.svg" alt="RS School">
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
